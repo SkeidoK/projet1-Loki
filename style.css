@@ -16,7 +16,7 @@ nav {
     background-color: var(--primary-color);
 }
 
-header {
+header div{
     display: grid;
     grid-template-columns: 2rem 2fr 1fr;
     grid-template-rows: 10rem 10rem 10rem;
@@ -47,7 +47,7 @@ header h1 {
     margin-left : 13%;
 }
 
-header div{
+#quoteSpace div {
     margin-right: 10%;
     height: 8rem;
     width: 32rem;
@@ -65,7 +65,11 @@ header div{
     margin-left: 10%
 }
 
-header div .headerImg {
-    height: 50%;
-    width: 50%;
+#headerImg .headerImg {
+    display: flex;
+    justify-content: left;
+    background-image: url(Loki-header.png);
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
 }
