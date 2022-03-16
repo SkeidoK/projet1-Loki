@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #0b450a;
+    --secondary-color: #d6ae2f;
+    --dark: #051A05;
+    --light: #FFF7DE;
+    --title-font: 'Parisienne', cursive;
+    --main-font: 'Prata', serif;
+}
+
+body {
+    color: var(--light);
+    font-family: var(--main-font);
+    background-color: var(--dark);
+}
+nav {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 60%  auto;
+    grid-template-rows: 5% auto;
+    column-gap: 1.5rem;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    width: 100%;
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+}
+
+.experience h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.theme1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #d6ae2f;
+    
+}
+
+.theme2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #d6ae2f;
+    
+}
+
+.theme3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #d6ae2f;
+}
+
+.theme4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #d6ae2f;
+}
+
+.theme5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #d6ae2f;
+}
+
+.theme6{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #d6ae2f;
+}
+
+.theme7{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #d6ae2f;
+}
+
+.theme8{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: #d6ae2f;
+}
+
+.contact{
+    display: grid;
+    grid-template-rows: 20% auto;
+    width: 80%;
+   
+}
+
+.contact h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 0;
+
+}
+
+section{
+    background-color: #d6ae2f;
+   
+}

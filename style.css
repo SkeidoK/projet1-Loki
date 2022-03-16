@@ -40,6 +40,7 @@ nav h1 {
     font-size: 2rem;   
     display:flex ;
     justify-content: flex-start;
+
 }
 
 nav ul {
@@ -52,8 +53,8 @@ nav ul {
 }
 
 nav ul li {
-    list-style: none;
-    padding-right: 2.5rem;
-    font-family: var(--main-font);
-    font-size: 1.5rem;
+list-style: none;
+padding-right: 2.5rem;
+font-family: var(--main-font);
+font-size: 1.5rem;
 }
