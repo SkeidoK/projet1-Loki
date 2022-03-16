@@ -13,34 +13,36 @@ body {
     background-color: var(--dark);
 }
 
-
 nav {
     background-color: var(--primary-color);   
     display : flex; 
     align-items: center;
     justify-content: space-between;
-   
 }
 
 nav div {
     display: flex;
     margin-top: 0.5rem;
 }
+
 nav img {
     margin-left: 0.5rem ;
     margin-right: 0.5rem;
     display: flex;
     align-items: center;
 }
+
 nav h1 { 
     color: var(--secondary-color);
+    font-family: var(--title-font);
+    font-weight: 100;
     margin: 0px; 
     font-size: 2rem;   
     display:flex ;
     justify-content: flex-start;
-    font-family: var(--title-font);
-    font-weight: 100;
+
 }
+
 nav ul {
     display: flex; 
     padding-right: 1rem;
@@ -49,6 +51,7 @@ nav ul {
     font-size: 1rem;
     justify-content: center;
 }
+
 nav ul li {
 list-style: none;
 padding-right: 2.5rem;
