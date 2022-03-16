@@ -62,4 +62,10 @@ header div{
 .quoteSpace p {
     margin-left: 5%;
     margin-top: 5%;
+    margin-left: 10%
+}
+
+header div .headerImg {
+    height: 50%;
+    width: 50%;
 }
