@@ -1,7 +1,21 @@
 :root {
     --primary-color: #0b450a;
     --secondary-color: #d6ae2f;
+    --dark: #051A05;
+    --light: #FFF7DE;
+    --title-font: 'Parisienne', cursive;
+    --main-font: 'Prata', serif;
+}
+
+body {
+    color: var(--light);
+    font-family: var(--main-font);
+    background-color: var(--dark);
 }
 nav {
     background-color: var(--primary-color);
+}
+
+h1 {
+    font-family: var(--title-font);
 }
