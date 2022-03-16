@@ -40,7 +40,7 @@ div.quoteSpace {
     margin-right: 10%;
     height: 8rem;
     width: 32rem;
-    background-color: var(--dark);
+    background-color: var(--primary-color);
     grid-row: 3 / 5;
     grid-column-start: 2;
     gap: 5%;
@@ -63,4 +63,25 @@ div.headerImg {
     grid-column: 3 / 4;
     grid-row: 1 / 4;
     margin: 0;
+}
+
+section#about-me {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;   
+    height: 50vh;
+    width: 90%;
+    margin-left: 5%;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+div.aboutmeImg {
+    grid-column: 1 / 2;
+    background-image: url(image/lokiaboutme.png);
+    background-size: cover;
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    margin-left: 20%;
 }
