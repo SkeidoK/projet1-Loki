@@ -19,3 +19,42 @@ nav {
 h1 {
     font-family: var(--title-font);
 }
+
+.experience {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.experience h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.invasion {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.theme8 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+}
