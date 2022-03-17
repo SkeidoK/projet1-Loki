@@ -38,13 +38,16 @@ header h1 {
     font-family : var(--main-font);
     font-size : var(--title-font-size);
     color: var(--dark);
-    text-shadow: 2px 0px 1px var(--light);
+    text-shadow: 1px 1px 1px var(--light);
 }
 
 div.quoteSpace {
     margin-right: 20%;
     height: 8rem;
     width: 55vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--primary-color);
     opacity: 0.8;
     grid-row: 3 / 5;
@@ -57,10 +60,11 @@ div.quoteSpace {
 }
 
 .quoteSpace p {
-    margin-left: 5%;
-    margin-top: 3%;
-    margin-left: 5%;
     font-size: calc(var(--main-font-size) + 0.1rem);
+}
+
+.quoteSpace:hover {
+    opacity: 9;
 }
 
 div.headerImg {
@@ -86,11 +90,12 @@ section#about-me {
 
 .aboutmeImg {
     grid-column: 1 / 2;
-    background-image: url(image/lokiaboutme.png);
+    background-image: url(image/loki-1.jpg);
     background-size: cover;
+    background-position: center;
     width: 70%;
-    height: 100%;
-    border-radius: 4px;
+    height: 80%;
+    border-radius: 2px;
     margin-left: 20%;
 }
 .about-me h2 {
