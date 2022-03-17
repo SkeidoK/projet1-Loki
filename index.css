@@ -93,18 +93,14 @@ div.aboutmeImg {
     height: 80%;
     border-radius: 4px;
     margin-left: 20%;
-    z-index: 1;
 }
 
 section#about-me p {
     max-width: 45ch;
     font-size: var(--main-font-size);
-    z-index: 1;
 }
 
 div.background {
-    background-image: url(image/background.png);
-    background-size: cover;
-    opacity: 50%;
-    z-index: 0;
+    background-image: url(image/white-diamond-dark.png);
+    background-color: var(--primary-color);
 } 
