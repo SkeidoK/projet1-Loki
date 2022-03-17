@@ -6,8 +6,14 @@
     --title-font: 'Parisienne', cursive;
     --main-font: 'Prata', serif;
 }
+
+* {
+    box-sizing: border-box ;
+}
+
 body { 
-    margin : 0px;
+    margin : 0;
+    padding: 0;
     color: var(--light);
     font-family: var(--main-font);
     background-color: var(--dark);
