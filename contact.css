@@ -1,5 +1,40 @@
+:root {
+    --primary-color: #051A05;
+    --secondary-color: #d6ae2f;
+    --dark: #021902;
+    --light: #FFFBEC;
+    --intermediate-green: #234222;
+    --intermediate-gold: #E1D397;
+    
+    --title-font: 'Parisienne', cursive;
+    --main-font: 'Overpass', sans-serif;
+
+    --main-font-size: 1.2rem;
+    --title-font-size: 3rem;
+
+}
 .main {
     display: grid;
-    grid-template-columns: 60%  auto;
-    /* column-gap: 1.5rem; */
+    grid-template-columns: 50% auto;
+    margin: 30px;
+}
+.imagecontact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formulaire h1 {
+    color: var(--secondary-color);
+    font-family: var(--title-font);
+    font-size: var(--title-font-size) ;
+}
+.formulaire p {
+color: var(--light);
+font-family: var(--main-font);
+font-size: var(--main-font-size);
+}
+.contactForm {
+color: var(--light);
+font-family: var(--main-font);
+font-size: var(--main-font-size);
 }
