@@ -38,6 +38,7 @@ header h1 {
     font-family : var(--main-font);
     font-size : var(--title-font-size);
     color: var(--dark);
+    text-shadow: 2px 0px 1px var(--light);
 }
 
 div.quoteSpace {
@@ -81,7 +82,7 @@ section#about-me {
     padding-top: 3rem;
 }
 
-div.aboutmeImg {
+.aboutmeImg {
     grid-column: 1 / 2;
     background-image: url(image/lokiaboutme.png);
     background-size: cover;
@@ -90,13 +91,37 @@ div.aboutmeImg {
     border-radius: 4px;
     margin-left: 20%;
 }
+.about-me h2 {
+    font-size: var(--title-font-size);
+    font-family: var(--title-font);
+    color: var(--secondary-color);
+    font-weight: 100;
+    margin: 0;
+    text-shadow: 0.5px 1px 1px var(--dark); 
+}
+
+.about-me h3 {
+    font-size: calc(var(--main-font-size) + 0.3rem);
+    font-family: var(--main-font);
+    color: var(--intermediate-gold);
+    font-weight: 150;
+    text-shadow: 0.5px 1px 1px var(--dark);
+}
 
 section#about-me p {
     max-width: 45ch;
     font-size: var(--main-font-size);
+    font-weight: 200;
 }
 
 div.background {
     background-image: url(image/white-diamond-dark.png);
     background-color: var(--primary-color);
 } 
+
+.line {
+    height: 0.1vh;
+    width: 40vw;
+    background-color: var(--secondary-color);
+    text-shadow: 0.5px 1px 1px var(--dark);
+}
