@@ -70,19 +70,15 @@ div.headerImg {
     margin: 0;
 }
 
-section {
-    z-index: 1;
-}
 section#about-me {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;   
-    height: 50vh;
+    height: 70vh;
     width: 90%;
     margin-left: 5%;
     gap: 2rem;
     padding-top: 3rem;
-    z-index: 1;
 }
 
 div.aboutmeImg {
@@ -90,7 +86,7 @@ div.aboutmeImg {
     background-image: url(image/lokiaboutme.png);
     background-size: cover;
     width: 70%;
-    height: 80%;
+    height: 100%;
     border-radius: 4px;
     margin-left: 20%;
 }
