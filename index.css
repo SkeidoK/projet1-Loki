@@ -4,12 +4,12 @@
 
 header {
     display: grid;
-    grid-template-columns: 3% 62% 35%;
+    grid-template-columns: 3% 67% 30%;
     grid-template-rows: 40% 20% 40%;
     min-height: 25rem;
     margin: 0;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background-color: var(--secondary-color);
 }
 
@@ -23,23 +23,21 @@ header div{
     margin-left: 10%
 }
 
+header span {
+    grid-column: 2 / 3;
+    margin-top : 2%;
+    margin-left : 2%;
+    max-width: 800px;
+}
+
+.titlePart2 {
+    margin-left: 12vw;
+}
 header h1 {
     height : calc(var(--title-font-size) * 2);
     font-family : var(--main-font);
     font-size : var(--title-font-size);
     color: var(--dark);
-}
-
-.h1pt1{
-    grid-column: 2 / 3;
-    margin-top : 10%;
-    margin-left : 2%;
-}
-
-.h1pt2 {
-    grid-column: 2 / 3;
-    margin-top : 0%;
-    margin-left : 10%;
 }
 
 div.quoteSpace {
@@ -72,6 +70,9 @@ div.headerImg {
     margin: 0;
 }
 
+section {
+    z-index: 1;
+}
 section#about-me {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -81,6 +82,7 @@ section#about-me {
     margin-left: 5%;
     gap: 2rem;
     padding-top: 3rem;
+    z-index: 1;
 }
 
 div.aboutmeImg {
@@ -91,9 +93,18 @@ div.aboutmeImg {
     height: 80%;
     border-radius: 4px;
     margin-left: 20%;
+    z-index: 1;
 }
 
 section#about-me p {
     max-width: 45ch;
     font-size: var(--main-font-size);
+    z-index: 1;
 }
+
+div.background {
+    background-image: url(image/background.png);
+    background-size: cover;
+    opacity: 50%;
+    z-index: 0;
+} 
