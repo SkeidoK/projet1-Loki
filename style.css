@@ -1,13 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400&family=Parisienne&display=swap');
+
 :root {
-    --primary-color: #0b450a;
+    --primary-color: #051A05;
     --secondary-color: #d6ae2f;
-    --dark: #051A05;
-    --light: #FFF7DE;
+    --dark: #021902;
+    --light: #FFFBEC;
+    --intermediate-green: #234222;
+    --intermediate-gold: #E1D397;
+    
     --title-font: 'Parisienne', cursive;
-    --main-font: 'Prata', serif;
+    --main-font: 'Overpass', sans-serif;
+
+    --main-font-size: 1.2rem;
+    --title-font-size: 3rem;
+
 }
+
+* {
+    box-sizing: border-box ;
+    line-height: 1.5;
+}
+
 body { 
-    margin : 0px;
+    margin : 0;
+    padding: 0;
     color: var(--light);
     font-family: var(--main-font);
     background-color: var(--dark);
