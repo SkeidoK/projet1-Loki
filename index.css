@@ -42,21 +42,23 @@ header h1 {
 }
 
 div.quoteSpace {
-    margin-right: 10%;
+    margin-right: 20%;
     height: 8rem;
-    width: 32rem;
+    width: 50vw;
     background-color: var(--primary-color);
+    opacity: 0.8;
     grid-row: 3 / 5;
     grid-column-start: 2;
     gap: 5%;
-    margin-left: 8%;
+    margin-left: 15%;
     border-radius: 5px;
-    margin-top: 1rem;
+    box-shadow: 0.5px 1px 1px var(--dark);;
+    margin-top: 0.5rem;
 }
 
 .quoteSpace p {
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 5%;
     font-size: calc(var(--main-font-size) + 0.1rem);
 }
