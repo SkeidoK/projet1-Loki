@@ -1,13 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400&family=Parisienne&display=swap');
+
 :root {
-    --primary-color: #0b450a;
+    --primary-color: #051A05;
     --secondary-color: #d6ae2f;
-    --dark: #051A05;
-    --light: #FFF7DE;
+    --dark: #021902;
+    --light: #FFFBEC;
+    --intermediate-green: #234222;
+    --intermediate-gold: #E1D397;
+    
     --title-font: 'Parisienne', cursive;
-    --main-font: 'Prata', serif;
+    --main-font: 'Overpass', sans-serif;
+
+    --main-font-size: 1.2rem;
+    --title-font-size: 3rem;
+
+}
+
+* {
+    box-sizing: border-box ;
+    line-height: 1.5;
+}
+html {
+    scroll-behavior: smooth;
 }
 body { 
-    margin : 0px;
+    margin : 0;
+    padding: 0;
     color: var(--light);
     font-family: var(--main-font);
     background-color: var(--dark);
@@ -21,6 +39,7 @@ nav {
     justify-content: space-between;
     text-align: center;
     width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 nav div {
@@ -51,8 +70,7 @@ nav ul {
     display: flex; 
     padding-right: 1rem;
     font-family: var(--main-font);
-    color: var(--light);
-    
+    color: var(--intermediate-gold);
     justify-content: center;
 }
 
@@ -63,7 +81,11 @@ font-family: var(--main-font);
 font-size: 1.3rem;
 }
 nav ul li a {
-    color: var(--light);
+    color: var(--intermediate-gold);
     text-decoration: none;
     font-family: var(--main-font);
+  }
+  nav ul li a:hover {
+    font-family: var(--main-font);
+    color: var(--secondary-color);
   }

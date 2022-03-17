@@ -1,10 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     display: grid;
     grid-template-columns: 3% 62% 35%;
     grid-template-rows: 40% 20% 40%;
-    min-height: 25rem; 
+    min-height: 25rem;
     margin: 0;
-    width: auto;
+    width: 100%;
+    height: 70vh;
     background-color: var(--secondary-color);
 }
 
@@ -19,9 +24,10 @@ header div{
 }
 
 header h1 {
-    height : calc(2,5em * 2);
+    height : calc(var(--title-font-size) * 2);
     font-family : var(--main-font);
-    font-size : 2.5rem;
+    font-size : var(--title-font-size);
+    color: var(--dark);
 }
 
 .h1pt1{
@@ -52,11 +58,12 @@ div.quoteSpace {
 .quoteSpace p {
     margin-left: 5%;
     margin-top: 5%;
-    margin-left: 10%
+    margin-left: 5%;
+    font-size: calc(var(--main-font-size) + 0.1rem);
 }
 
 div.headerImg {
-    background-image: url(Loki-header.png);
+    background-image: url(image/Loki-headerleft.png);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -82,6 +89,11 @@ div.aboutmeImg {
     background-size: cover;
     width: 70%;
     height: 80%;
-    border-radius: 10px;
+    border-radius: 4px;
     margin-left: 20%;
+}
+
+section#about-me p {
+    max-width: 45ch;
+    font-size: var(--main-font-size);
 }
