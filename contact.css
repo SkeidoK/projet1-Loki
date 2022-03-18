@@ -13,6 +13,9 @@
     --title-font-size: 3rem;
 
 }
+body {
+    background-image: url(image/white-diamond-dark.png);
+}
 .main {
     display: grid;
     grid-template-columns: 50% auto;
@@ -22,11 +25,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+}
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
 }
 .formulaire h1 {
     color: var(--secondary-color);
     font-family: var(--title-font);
-    font-size: var(--title-font-size) ;
+    font-size: var(--title-font-size);
+    margin: 0px;
 }
 .formulaire p {
 color: var(--light);
