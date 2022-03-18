@@ -44,7 +44,8 @@ div.experience {
     grid-column-end  : 3;
     grid-row-start   : 1;
     grid-row-end     : 2;
-    margin-top       : 2.5rem;
+    margin-top       : 2.2rem;
+    margin-bottom    : 0;
     color            : var(--secondary-color);
     font-family      : var(--title-font);
     font-size        : var(--title-font-size);
