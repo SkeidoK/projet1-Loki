@@ -39,6 +39,8 @@ nav {
     text-align: center;
     width: 100%;
     border-bottom: 1px solid var(--secondary-color);
+    position: sticky;
+    top: 0;
 }
 
 nav div {
