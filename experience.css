@@ -111,6 +111,8 @@ section>h3 {
     grid-column-end  : 2;
     grid-row-start   : 3;
     grid-row-end     : 4;
+    background-image : url(image/loki\ evasion.jpg);
+    background-size  : cover;
 }
 
 .theme3 {
@@ -134,8 +136,6 @@ section>h3 {
     grid-column-end  : 3;
     grid-row-start   : 3;
     grid-row-end     : 4;
-    background-image : url(image/loki\ evasion.jpg);
-    background-size  : cover;
 }
 
 .theme6 {
