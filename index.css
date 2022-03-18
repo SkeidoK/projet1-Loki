@@ -76,6 +76,7 @@ span.italic {
 
 div.headerImg {
     background-image: url(image/Loki-headerleft.png);
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
