@@ -30,7 +30,7 @@ div.experience {
     grid-template-columns: repeat(2, 1fr);
     width                : 100%;
     grid-row-gap         : 2rem;
-    column-gap           : 1.5rem;
+    column-gap           : 0.5rem;
     padding-left         : 4rem;
     padding-bottom       : 1rem;
 
@@ -52,6 +52,17 @@ div.experience {
 
 }
 
+.skills h2 {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+    color: var(--secondary-color);
+}
+
+.skills {
+    display: grid;
+    grid-template-rows: 20% 40% auto;
+}
+
 section > h3 {
     color: var(--primary-color);
     text-shadow: 1px 1px 1px var(--light);
@@ -67,13 +78,12 @@ section > h3 {
 .theme6,
 .theme7,
 .theme8 {
-    background-color: var(--secondary-color);
+    background-color: var(--intermediate-green);
     border          : 2px solid;
-    border-color    : var(--intermediate-gold);
+    border-color    : var(--secondary-color);
     box-shadow      : 0 4px 6px 6px var(--dark);
     border-radius   : 6px;
     padding         : 0.5rem;
-    opacity         : 0.9;
 }
 
 .theme1:hover,
@@ -90,7 +100,7 @@ section > h3 {
 
 .theme1 {
     grid-column-start: 1;
-    grid-column-end  : 3;
+    grid-column-end  : 2;
     grid-row-start   : 2;
     grid-row-end     : 3;
 }
@@ -103,30 +113,31 @@ section > h3 {
 }
 
 .theme3 {
-    grid-column-start: 2;
-    grid-column-end  : 3;
-    grid-row-start   : 3;
-    grid-row-end     : 4;
-}
-
-.theme4 {
     grid-column-start: 1;
     grid-column-end  : 2;
     grid-row-start   : 4;
     grid-row-end     : 5;
 }
 
+.theme4 {
+    grid-column-start: 2;
+    grid-column-end  : 3;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+}
+
 .theme5 {
+    grid-column-start: 2;
+    grid-column-end  : 3;
+    grid-row-start   : 3;
+    grid-row-end     : 4;
+    background-image: url(image/loki\ evasion.jpg);
+    background-size: cover;
+}
+
+.theme6 {
     grid-column-start: 2;
     grid-column-end  : 3;
     grid-row-start   : 4;
     grid-row-end     : 5;
-
-}
-
-.theme6 {
-    grid-column-start: 1;
-    grid-column-end  : 3;
-    grid-row-start   : 5;
-    grid-row-end     : 6;
 }
