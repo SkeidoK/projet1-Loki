@@ -3,6 +3,7 @@
 :root {
     --primary-color: #051A05;
     --secondary-color: #d6ae2f;
+    --secondary-color-transparent: #d6ae2f22;
     --dark: #021902;
     --light: #FFFBEC;
     --intermediate-green: #234222;
