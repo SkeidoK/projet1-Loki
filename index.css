@@ -40,12 +40,13 @@ header h1 {
 }
 
 .titlePart2 {
-    margin-left: 18vw;
+    margin-left: 15vw;
 }
 
 div.quoteSpace {
     height: 13vh;
-    width: 50vw;
+    width: 60%;
+    min-width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +54,7 @@ div.quoteSpace {
     opacity: 85%;
     grid-row: 3 / 6;
     grid-column: 2 / 5;
-    margin-left: 5vw;
+    margin-left: 2vw;
     border-radius: 5px;
     box-shadow: 0.5px 1px 1px var(--dark);;
     margin-top: 2vh;
