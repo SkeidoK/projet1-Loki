@@ -22,7 +22,7 @@ h1 {
 }
 
 div.experience {
-    color: var(--dark);
+    color: var(--light);
 }
 
 .experience {
@@ -65,8 +65,8 @@ div.experience {
 }
 
 section>h3 {
-    color        : var(--primary-color);
-    text-shadow  : 1px 1px 1px var(--light);
+    color        : var(--secondary-color);
+    text-shadow  : 1px 1px 1px var(--intermediate-green);
     margin       : 0;
     margin-bottom: 0.5rem;
 }
