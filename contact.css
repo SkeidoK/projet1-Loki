@@ -20,8 +20,8 @@
           grid-template-columns: 50% auto;
           margin-left: 220px;
           margin-right: 220px;
-          margin-top: 50px;
-          gap: 40px;
+          margin-top: 100px;
+          grid-gap: 40px;
       }
       
       .imagecontact {
@@ -73,13 +73,16 @@
           margin-bottom: 30px;
           width: 75%;
           height: 2.2rem;
-          border-radius: 1px;
+          border-radius: 2px;
           border: 1px solid var(--secondary-color);
+      }
+      input::placeholder {
+        color: var(--light);
       }
       .contactForm textarea {
         width: 75%;
         height: 5rem;
-        border-radius: 3px;
+        border-radius: 2px;
         font-family: var(--main-font);
         font-size: var(--main-font-size);
         font-weight: 200;
@@ -87,13 +90,17 @@
         border: 1px solid var(--secondary-color);
         color: var(--light);
       }
+      .contactForm textarea::placeholder {
+        color: var(--light);
+    }
+      
       .button {
         z-index: 1;
         position: relative;
         overflow: hidden;
         transition: color 0.4s ease-in-out;
-        width: 25%;
-        border-radius: 10px;
+        width: 15%;
+        border-radius: 6px;
       }
       
       .button:hover {
