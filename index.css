@@ -66,7 +66,7 @@ blockquote.quoteSpace {
     linear-gradient(to bottom, var(--intermediate-green) 4px, transparent 4px) 100% 0,
     linear-gradient(to top, var(--intermediate-green) 4px, transparent 4px) 0 100%;
     background-repeat: no-repeat;
-    background-size: 20px 20px;
+    background-size: 1rem 1rem;
 }
 
 blockquote.quoteSpace:before{
@@ -89,7 +89,7 @@ blockquote.quoteSpace:after{
     font-family: FontAwesome;
     position: absolute;
     color: var(--intermediate-green);
-    font-size: 34px;
+    font-size: 2rem;
 }
 
 cite {
