@@ -80,9 +80,9 @@ section>h3 {
 .theme7,
 .theme8 {
     background-color: var(--intermediate-green);
-    border          : 2px solid;
+    border          : 1px solid;
     border-color    : var(--secondary-color);
-    box-shadow      : 0 4px 6px 6px var(--dark);
+    box-shadow      : 0 4px 8px 8px var(--dark);
     border-radius   : 6px;
     padding         : 0.5rem;
 }
@@ -145,4 +145,19 @@ section>h3 {
     grid-row-end     : 5;
     background-image : url(image/lokicoursepoursuite.jpeg);
     background-size  : cover;
+}
+
+li{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.image {
+    background-image: url(image/Loki_profile.jpg);
+    background-size: cover;
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px 6px var(--dark);
 }
