@@ -161,3 +161,18 @@ li{
     border-radius: 3px;
     box-shadow: 0 4px 4px 6px var(--dark);
 }
+
+@media screen and (max-width: 768px) {
+
+    .main{
+        display: grid;
+    }
+
+    .experience{
+        display: inline-block;
+    }
+
+    .skills {
+        display: inline-block;  
+    }
+}
