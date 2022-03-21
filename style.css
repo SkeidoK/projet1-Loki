@@ -152,3 +152,33 @@ footer {
         display: none;
     }
 }
+
+@media screen and (max-width: 800px){
+    footer {
+        background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        border-top: 1px solid var(--secondary-color);
+        z-index: 2;
+        font-style: italic;
+    }
+    
+    .disclaimer {
+        color: var(--intermediate-gold);
+        font-size: clamp(0.3rem, 0.8vw, 0.9rem);
+        opacity: 50%;
+        margin-right: 0.5rem;
+        margin-left: 1rem;
+    }
+    
+    .footerAt {
+        color: var(--secondary-color);
+        opacity: 80%;
+        margin-left: 0.5rem;
+        font-size: clamp(0.8rem, 5vw, 1rem);
+
+    }
+}
