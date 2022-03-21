@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400&family=Parisienne&display=swap');
-
 :root {
     --primary-color: #051A05;
     --secondary-color: #d6ae2f;
@@ -8,36 +7,34 @@
     --light: #FFFBEC;
     --intermediate-green: #234222;
     --intermediate-gold: #E1D397;
-    
     --title-font: 'Parisienne', cursive;
     --main-font: 'Overpass', sans-serif;
-
     --main-font-size: 1.1rem;
     --title-font-size: 3rem;
 }
 
 * {
-    box-sizing: border-box ;
+    box-sizing: border-box;
     line-height: 1.5;
 }
+
 html {
     scroll-behavior: smooth;
 }
-body { 
-    margin : 0;
+
+body {
+    margin: 0;
     padding: 0;
     color: var(--light);
     font-family: var(--main-font);
-    background-color: var(--dark);
     width: 100%;
 }
 
 nav {
-    background-color: var(--primary-color);   
-    display : flex; 
+    background-color: var(--primary-color);
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
     width: 100%;
     border-bottom: 1px solid var(--secondary-color);
     position: sticky;
@@ -47,48 +44,111 @@ nav {
 
 nav div {
     display: flex;
-    margin-top: 0.5rem;
 }
 
 nav img {
-    margin-left: 0.5rem ;
+    margin-left: 0.5rem;
     margin-right: 0.8rem;
     display: flex;
     align-items: center;
     padding-top: 2px;
 }
 
-nav h1 { 
+nav h1 {
     color: var(--secondary-color);
     font-family: var(--title-font);
     font-weight: 100;
-    margin: 0px; 
-    font-size: 2rem;   
-    display:flex ;
+    margin: 0px;
+    font-size: 2rem;
+    display: flex;
     justify-content: flex-start;
-
 }
 
 nav ul {
-    display: flex; 
-    padding-right: 1rem;
-    font-family: var(--main-font);
-    color: var(--intermediate-gold);
-    justify-content: center;
+    display: none;
 }
 
-nav ul li {
-list-style: none;
-padding-right: 2.5rem;
-font-family: var(--main-font);
-font-size: calc(var(--main-font-size) + 0.1rem);
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid var(--secondary-color);
+    z-index: 2;
+    font-style: italic;
 }
-nav ul li a {
+
+.disclaimer {
     color: var(--intermediate-gold);
-    text-decoration: none;
-    font-family: var(--main-font);
-  }
-  nav ul li a:hover {
-    font-family: var(--main-font);
+    font-size: clamp(0.2rem, 0.8vw, 0.9rem);
+    opacity: 50%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.footerAt {
     color: var(--secondary-color);
-  }
+    opacity: 80%;
+    margin-left: 1rem;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+
+}
+@media screen and (min-width: 800px) {
+    nav {
+        background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid var(--secondary-color);
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    nav div {
+        display: flex;
+    }
+    nav img {
+        margin-left: 0.5rem;
+        margin-right: 0.8rem;
+        display: flex;
+        align-items: center;
+        padding-top: 2px;
+    }
+    nav h1 {
+        color: var(--secondary-color);
+        font-family: var(--title-font);
+        font-weight: 100;
+        margin: 0px;
+        font-size: 2rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+    nav ul {
+        display: flex;
+        padding-right: 1rem;
+        font-family: var(--main-font);
+        color: var(--intermediate-gold);
+        justify-content: center;
+    }
+    nav ul li {
+        list-style: none;
+        padding-right: 2.5rem;
+        font-family: var(--main-font);
+        font-size: calc(var(--main-font-size) + 0.1rem);
+    }
+    nav ul li a {
+        color: var(--intermediate-gold);
+        text-decoration: none;
+        font-family: var(--main-font);
+    }
+    nav ul li a:hover {
+        font-family: var(--main-font);
+        color: var(--secondary-color);
+    }
+    .burger {
+        display: none;
+    }
+}
