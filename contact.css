@@ -1,112 +1,112 @@
-         :root {
-            --primary-color: #051A05;
-            --secondary-color: #d6ae2f;
-            --dark: #021902;
-            --light: #FFFBEC;
-            --intermediate-green: #234222;
-            --intermediate-gold: #E1D397;
-            --title-font: 'Parisienne', cursive;
-            --main-font: 'Overpass', sans-serif;
-            --main-font-size: 1.2rem;
-            --title-font-size: 3rem;
-        }
-        
-        body {
-            background-image: url(image/white-diamond-dark.png);
-            background-color: var(--primary-color);
-        }
-        
-        .main {
-            display: grid;
-            grid-template-columns: 50% auto;
-            margin-left: 220px;
-            margin-right: 220px;
-            margin-top: 100px;
-            grid-gap: 40px;
-        }
-        
-        .imagecontact {
-            background-image: url(image/ministre.jpg);
-            height: 100%;
-            width: 80%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            margin-left: 20%;
-            border-radius: 3px;
-        }
-        
-        .formulaire {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        
-        h1 {
-            color: var(--secondary-color);
-            font-family: var(--title-font);
-            font-size: var(--title-font-size);
-            margin: 0px;
-            font-weight: 100;
-        }
-        
-        p {
-            color: var(--light);
-            font-family: var(--main-font);
-            font-size: var(--main-font-size);
-            font-weight: 200;
-        }
-        
-        .contactForm {
-            color: var(--intermediate-gold);
-            font-family: var(--main-font);
-            font-size: var(--main-font-size);
-            font-weight: 300;
-        }
-        
-        input {
-            color: var(--light);
-            font-family: var(--main-font);
-            font-size: var(--main-font-size);
-            font-weight: 200;
-            background-color: var(--primary-color);
-            margin-bottom: 30px;
-            width: 75%;
-            height: 2.2rem;
-            border-radius: 2px;
-            border: 1px solid var(--secondary-color);
-        }
-        
-        input::placeholder {
-            color: var(--light);
-        }
-        
-        .contactForm textarea {
-            width: 75%;
-            height: 5rem;
-            border-radius: 2px;
-            font-family: var(--main-font);
-            font-size: var(--main-font-size);
-            font-weight: 200;
-            background-color: var(--primary-color);
-            border: 1px solid var(--secondary-color);
-            color: var(--light);
-        }
-        
-        .contactForm textarea::placeholder {
-            color: var(--light);
-        }
-        
-        .button {
-            z-index: 1;
-            position: relative;
-            overflow: hidden;
-            transition: color 0.4s ease-in-out;
-            width: 15%;
-            border-radius: 6px;
-        }
-        
-        .button:hover {
-            cursor: pointer;
-            color: var(--secondary-color);
-        }
+              :root {
+                 --primary-color: #051A05;
+                 --secondary-color: #d6ae2f;
+                 --dark: #021902;
+                 --light: #FFFBEC;
+                 --intermediate-green: #234222;
+                 --intermediate-gold: #E1D397;
+                 --title-font: 'Parisienne', cursive;
+                 --main-font: 'Overpass', sans-serif;
+                 --main-font-size: 1.2rem;
+                 --title-font-size: 3rem;
+             }
+             
+             body {
+                 background-image: url(image/white-diamond-dark.png);
+                 background-color: var(--primary-color);
+             }
+             
+             .main {
+                 display: grid;
+                 grid-template-columns: 50% auto;
+                 margin-left: 220px;
+                 margin-right: 220px;
+                 margin-top: 100px;
+                 grid-gap: 40px;
+             }
+             
+             .imagecontact {
+                 background-image: url(image/ministre.jpg);
+                 height: 100%;
+                 width: 80%;
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                 background-position: center;
+                 margin-left: 20%;
+                 border-radius: 3px;
+             }
+             
+             .formulaire {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space-between;
+             }
+             
+             h1 {
+                 color: var(--secondary-color);
+                 font-family: var(--title-font);
+                 font-size: var(--title-font-size);
+                 margin: 0px;
+                 font-weight: 100;
+             }
+             
+             p {
+                 color: var(--light);
+                 font-family: var(--main-font);
+                 font-size: var(--main-font-size);
+                 font-weight: 200;
+             }
+             
+             .contactForm {
+                 color: var(--intermediate-gold);
+                 font-family: var(--main-font);
+                 font-size: var(--main-font-size);
+                 font-weight: 300;
+             }
+             
+             input {
+                 color: var(--light);
+                 font-family: var(--main-font);
+                 font-size: var(--main-font-size);
+                 font-weight: 200;
+                 background-color: var(--primary-color);
+                 margin-bottom: 30px;
+                 width: 75%;
+                 height: 2.2rem;
+                 border-radius: 2px;
+                 border: 1px solid var(--intermediate-gold);
+             }
+             
+             input::placeholder {
+                 color: var(--light);
+             }
+             
+             .contactForm textarea {
+                 width: 75%;
+                 height: 5rem;
+                 border-radius: 2px;
+                 font-family: var(--main-font);
+                 font-size: var(--main-font-size);
+                 font-weight: 200;
+                 background-color: var(--primary-color);
+                 border: 1px solid var(--secondary-color);
+                 color: var(--light);
+             }
+             
+             .contactForm textarea::placeholder {
+                 color: var(--light);
+             }
+             
+             .button {
+                 z-index: 1;
+                 position: relative;
+                 overflow: hidden;
+                 transition: color 0.4s ease-in-out;
+                 width: 15%;
+                 border-radius: 6px;
+             }
+             
+             .button:hover {
+                 cursor: pointer;
+                 color: var(--secondary-color);
+             }
