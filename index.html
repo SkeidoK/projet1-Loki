@@ -14,7 +14,9 @@
 </head>
 
 <body>
+    <div class="mobile" onclick="closeMenuMobile()"></div>
     <nav>
+
         <div>
             <img src="image/lokicvlogo.png" alt="Logo" width="35" height="35">
 
@@ -27,7 +29,20 @@
                 <li><a href="./index.html#about-me">A propos </a></li>
                 <li><a href="experience.html">Qualifications </a></li>
                 <li><a href="contact.html">Contact </a></li>
+                <div class="close" onclick="closeMenuMobile()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
             </ul>
+
+        </div>
+        <div class="burger" onclick="openMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
         </div>
     </nav>
     <header>
@@ -38,8 +53,8 @@
         </div>
         <div class="quoteSpace">
             <blockquote class="quoteSpace">
-                « Sûrement le Dieu le plus majestueux de l'univers. »  
-                <cite>-  Nick Fury</cite>
+                « Sûrement le Dieu le plus majestueux de l'univers. »
+                <cite>- Nick Fury</cite>
             </blockquote>
         </div>
     </header>
@@ -67,9 +82,10 @@
         </div>
         <footer>
             <p class="footerAt">@Lokid'Asgard</p>
-            <p class="disclaimer">Disclaimer : Loki n'est pas responsable de toute destruction et/ou dommages physiques et/ou psychologiques.</p>
+            <p class="disclaimer">Disclaimer : Loki n'est pas responsable de toute destruction et/ou dommages physiques
+                et/ou psychologiques.</p>
         </footer>
-
+        <script src="burger.js"></script>
 </body>
 
 </html>
