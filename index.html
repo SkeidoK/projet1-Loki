@@ -14,9 +14,8 @@
 </head>
 
 <body>
-    <div class="mobile" onclick="closeMenuMobile()"></div>
     <nav>
-
+        
         <div>
             <img src="image/lokicvlogo.png" alt="Logo" width="35" height="35">
 
@@ -43,11 +42,12 @@
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-        </div>
+        </div> 
+        <div class="mobile" onclick="closeMenuMobile()"></div>
     </nav>
     <header>
         <div class="headerTitle">
-            <h1>« Mon nom est Loki d'Asgard, <br> <span class="titlePart2">et vous avez besoin de moi »</span></h1>
+            <h1> Mon nom est Loki d'Asgard, <br> <span class="titlePart2">et vous avez besoin de moi</span></h1>
         </div>
         <div class="headerImg">
         </div>
@@ -66,7 +66,8 @@
                     <h2>A propos de moi</h2>
                     <div class="line"></div>
                     <h3>Le supervilain le plus influent de l'univers</h3>
-                    <p>
+                    <div class="about-me-text"> 
+                        <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore quam porro magnam recusandae
                         fugiat
                         neque sit inventore ea dicta ipsam facilis veniam obcaecati fugit deserunt est minus, nulla
@@ -78,6 +79,8 @@
                         iusto sunt asperiores corporis voluptas.
                     </p>
                 </div>
+                    </div>
+                </div>
             </section>
         </div>
         <footer>
@@ -88,4 +91,4 @@
         <script src="burger.js"></script>
 </body>
 
-</html>
+</html> 

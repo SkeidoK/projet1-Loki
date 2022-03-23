@@ -24,7 +24,7 @@ header div{
 
 .headerTitle {
     margin-top : clamp(3rem, 2rem, 1rem);
-    margin-left: 2vw;
+    margin-left: 5vw;
     width: auto;
     grid-row: 1 / 2;
     grid-column: 1 / 4;
@@ -73,6 +73,7 @@ blockquote.quoteSpace {
     background-size: 1rem 1rem;
     opacity: 80%;
 }
+
 blockquote.quoteSpace:hover{
     opacity: 90%;
 }
@@ -97,7 +98,7 @@ blockquote.quoteSpace:after{
     font-family: FontAwesome;
     position: absolute;
     color: var(--intermediate-green);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 cite {
@@ -188,7 +189,7 @@ div.background {
         overflow: hidden;
     }
     div.headerImg {
-        padding-top: 65rem;
+        padding-top: 75rem;
         background-size: cover;
         z-index: 0;
     }
@@ -200,7 +201,7 @@ div.background {
     }
     header h1 {
         font-family : 'Prata', serif;
-        font-size : clamp(2.1rem, 3vw, 4rem);
+        font-size : clamp(2.1rem, 7vw, 3rem);
         color: var(--dark);
         text-shadow: 1px 2px 1px var(--light);
         line-height: 2;
@@ -213,6 +214,7 @@ div.background {
     div.quoteSpace {
        display: none;
     }
+    
     section#about-me {
         display: flex;
         flex-direction: column;
@@ -228,6 +230,11 @@ div.background {
         height: 100%;
         margin-left: 0;
         padding-bottom: 0;
+    }
+
+    .about-me div {
+        width: 100%;
+        text-align: center;
     }
 
     .line {

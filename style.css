@@ -86,10 +86,12 @@ nav ul li a {
     text-decoration: none;
     font-family: var(--main-font);
 }
+
 nav ul li a:hover {
     font-family: var(--main-font);
     color: var(--secondary-color);
 }
+
 .burger {
     display: none;
 }
@@ -101,6 +103,10 @@ nav ul li a:hover {
 .close {
     display: none;
 }
+.mobile {
+display: none;
+}
+
 
 footer {
     background-color: var(--primary-color);
@@ -112,11 +118,12 @@ footer {
     border-top: 1px solid var(--secondary-color);
     font-style: italic;
     margin-top:auto; 
+    font-weight: 200;
 }
 
 .disclaimer {
     color: var(--intermediate-gold);
-    font-size: clamp(0.3rem, 1vw, 0.9rem);
+    font-size: clamp(0.3rem, 3vw, 0.8rem);
     opacity: 50%;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -129,11 +136,23 @@ footer {
     font-size: clamp(0.5rem, 1vw, 1rem);
 
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .burger{
         display: block;
         cursor: pointer;
     }
+    nav {
+        background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid var(--secondary-color);
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+    
     nav ul {
         position: fixed;
         top: 0;
@@ -147,6 +166,7 @@ footer {
         justify-content: center;
         flex-direction: column;
         display: none;
+        z-index: 5;
     }
     nav ul.open {
         display: flex;
@@ -192,6 +212,7 @@ footer {
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.6);
         display: none;
+        z-index: 4;
 
     }
     .mobile.open {
