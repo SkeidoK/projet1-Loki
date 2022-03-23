@@ -125,12 +125,13 @@ section#about-me {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;   
-    height: 70vh;
+    height: 50vh;
     width: 90%;
     margin-left: 5%;
     gap: 2rem;
     padding-top: 3rem;
     z-index: 1;
+    margin-bottom: 0;
 }
 
 .aboutmeImg {
@@ -139,9 +140,10 @@ section#about-me {
     background-size: cover;
     background-position: center;
     width: 70%;
-    height: 80%;
+    height: 95%;
     border-radius: 3px;
     margin-left: 20%;
+    margin-top: 1.5rem;
     box-shadow: 1px 1px 1px 1px var(--dark);
 }
 .about-me h2 {
@@ -164,14 +166,10 @@ section#about-me {
 section#about-me p {
     font-family: var(--main-font);
     max-width: 45ch;
-    font-size: var(--main-font-size);
+    font-size: clamp(0.9rem, 1vw, var(--main-font-size));
     font-weight: 200;
-}
 
-div.background {
-    background-image: url(image/white-diamond-dark.png);
-    background-color: var(--primary-color);
-} 
+}
 
 .line {
     height: 1.5px;
