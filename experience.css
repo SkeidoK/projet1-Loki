@@ -146,6 +146,8 @@ section>h3 {
     background-image : url(image/lokicoursepoursuite.jpeg);
     background-size  : cover;
 }
+<<<<<<< HEAD
+=======
 
 li {
     display   : flex;
@@ -230,3 +232,4 @@ svg {
         }
     }*/
 }
+>>>>>>> ca89037245ffd728bf5fab719d132d4e1d0f2f4d
