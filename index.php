@@ -53,9 +53,7 @@
         <div class="headerImg">
         </div>
         <div class="quoteSpace">
-            <blockquote class="quoteSpace">
-             <?php echo $RandomList[rand(0,count($RandomList)-1)] ?>
-            </blockquote>
+        
         </div>
     </header>
     <main id="main">
