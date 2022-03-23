@@ -147,47 +147,86 @@ section>h3 {
     background-size  : cover;
 }
 
-li{
-    display: flex;
+li {
+    display   : flex;
     list-style: none;
-    gap: 1rem;
-    margin: 1rem;
+    gap       : 1rem;
+    margin    : 1rem;
 }
 
-ul{
-    display: grid;
+ul {
+    display              : grid;
     grid-template-columns: auto;
 }
 
-.li1
+svg {
+    color    : var(--secondary-color);
+    animation: slide 2s 5s delay 2 normal both;
+}
 
 .progress-bar {
-    width: 200px;
-    height: 24px;
-    padding: 4px;
-    background-color:var(--intermediate-green);
-    border-radius: 16px;
+    width           : 200px;
+    height          : 24px;
+    padding         : 4px;
+    background-color: var(--intermediate-green);
+    border-radius   : 16px;
 }
 
 .image {
     background-image: url(image/Loki_profile.jpg);
-    background-size: cover;
-    padding: 1rem;
-    border-radius: 3px;
-    box-shadow: 0 4px 4px 6px var(--dark);
+    background-size : cover;
+    padding         : 1rem;
+    border-radius   : 3px;
+    box-shadow      : 0 4px 4px 6px var(--dark);
 }
 
 @media screen and (max-width: 768px) {
 
-    .main{
+    .main {
         display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 
-    .experience{
-        display: inline-block;
+    .experience {
+        display              : grid;
+        grid-template-columns: 1fr;
+        grid-template-rows   : 5fr;
+        gap                  : 2rem;
     }
 
+    .theme1,
+    .theme3,
+    .theme5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+
+    
+    
+    
     .skills {
-        display: inline-block;  
+        display: inline-block;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
+
+    .theme2,
+    .theme4,
+    .theme6 {
+        display: none;
+    }
+
+    /*@keyframes slide {
+        from {
+            margin-left: 100%;
+            width      : 300%;
+        }
+
+        to {
+            margin-left: 0%;
+            width      : 100%;
+        }
+    }*/
 }
