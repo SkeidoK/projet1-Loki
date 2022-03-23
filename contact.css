@@ -21,8 +21,8 @@
                  grid-template-columns: 50% auto;
                  margin-left: 220px;
                  margin-right: 220px;
-                 margin-top: 100px;
                  grid-gap: 40px;
+                 margin-top: auto;
              }
              
              .imagecontact {
@@ -49,12 +49,20 @@
                  margin: 0px;
                  font-weight: 100;
              }
+             .line {
+                height: 1px;
+                width: 35vw;
+                background-color: var(--secondary-color);
+                text-shadow: 0.5px 1px 1px var(--dark);
+                margin-bottom: 1.5rem;
+            }
              
              p {
                  color: var(--light);
                  font-family: var(--main-font);
                  font-size: var(--main-font-size);
                  font-weight: 200;
+                 margin-bottom: 2rem;
              }
              
              .contactForm {
@@ -65,20 +73,22 @@
              }
              
              input {
-                 color: var(--light);
+                 color: var(--dark);
                  font-family: var(--main-font);
                  font-size: var(--main-font-size);
-                 font-weight: 200;
-                 background-color: var(--primary-color);
+                 font-weight: 300;
+                 background-color: var(--intermediate-gold);
                  margin-bottom: 30px;
                  width: 75%;
                  height: 2.2rem;
                  border-radius: 2px;
-                 border: 1px solid var(--intermediate-gold);
+                 border: 1px solid var(--intermediate-green);
+                 opacity: 80%;
              }
              
              input::placeholder {
-                 color: var(--light);
+                 color: var(--dark);
+                 font-weight: 200;
              }
              
              .contactForm textarea {
@@ -87,14 +97,16 @@
                  border-radius: 2px;
                  font-family: var(--main-font);
                  font-size: var(--main-font-size);
-                 font-weight: 200;
-                 background-color: var(--primary-color);
-                 border: 1px solid var(--secondary-color);
-                 color: var(--light);
+                 font-weight: 300;
+                 background-color: var(--intermediate-gold);
+                 border: 1px solid var(--intermediate-green);
+                 color: var(--dark);
+                 opacity: 80%;
              }
              
              .contactForm textarea::placeholder {
-                 color: var(--light);
+                 color: var(--dark);
+                 font-weight: 200;
              }
              
              .button {
@@ -104,60 +116,97 @@
                  transition: color 0.4s ease-in-out;
                  width: 15%;
                  border-radius: 6px;
+                 color: var(--dark);
              }
              
              .button:hover {
                  cursor: pointer;
                  color: var(--secondary-color);
              }
+             .contactFooter {
+                margin-top: auto;
+                bottom: 0;
+            }
              @media screen and (max-width: 1200px) {
                 .main {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    height: 100%;
                     margin-left: 1rem;
                     margin-right: 1rem;
-                    margin-top: 0;
+                    margin-top: auto;
+
+                }
+                .line {
+                    height: 1px;
+                    width: 90vw;
+                    background-color: var(--secondary-color);
+                    text-shadow: 0.5px 1px 1px var(--dark);
+                }
+                .contactFooter {
+                    margin-top: auto;
+                    bottom: 0;
                 }
                 .imagecontact {
                     display: none;
                 }
                 input {
-                    color: var(--light);
+                    color: var(--dark);
                     font-family: var(--main-font);
                     font-size: var(--main-font-size);
-                    font-weight: 200;
-                    background-color: var(--primary-color);
+                    font-weight: 300;
+                    background-color: var(--intermediate-gold);
                     margin-bottom: 30px;
-                    width: 100%;
+                    width: 75%;
                     height: 2.2rem;
                     border-radius: 2px;
-                    border: 1px solid var(--secondary-color);
+                    border: 1px solid var(--intermediate-green);
+                    opacity: 80%;
                 }
+                
+                input::placeholder {
+                    color: var(--dark);
+                    font-weight: 200;
+                }
+                
                 .contactForm textarea {
-                    width: 100%;
+                    width: 75%;
                     height: 5rem;
                     border-radius: 2px;
                     font-family: var(--main-font);
                     font-size: var(--main-font-size);
+                    font-weight: 300;
+                    background-color: var(--intermediate-gold);
+                    border: 1px solid var(--intermediate-green);
+                    color: var(--dark);
+                    opacity: 80%;
+                }
+                
+                .contactForm textarea::placeholder {
+                    color: var(--dark);
                     font-weight: 200;
-                    background-color: var(--primary-color);
-                    border: 1px solid var(--secondary-color);
-                    color: var(--light);
+                }
+                
+                .button {
+                    z-index: 1;
+                    position: relative;
+                    overflow: hidden;
+                    transition: color 0.4s ease-in-out;
+                    width: 20%;
+                    border-radius: 6px;
+                    color: var(--dark);
+                }
+                
+                .button:hover {
+                    cursor: pointer;
+                    color: var(--secondary-color);
                 }
                 .formulaire {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     margin: 0;
-                }
-                .button {
-                    position: relative;
-                    overflow: hidden;
-                    transition: color 0.4s ease-in-out;
-                    width: 35%;
-                    border-radius: 6px;
-                    z-index: 0;
                 }
                 
             }  
