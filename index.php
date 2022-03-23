@@ -28,7 +28,7 @@
                 <li><a href="index.php">Accueil </a></li>
                 <li><a href="./index.php#about-me">A propos </a></li>
                 <li><a href="experience.html">Qualifications </a></li>
-                <li><a href="contact.html">Contact </a></li>
+                <li><a href="contact.php">Contact </a></li>
                 <div class="close" onclick="closeMenuMobile()">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" stroke-width="2">

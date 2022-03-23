@@ -171,7 +171,8 @@ footer {
         right: 0;
         width: 60%;
         height: 100vh;
-        background-color: var(--intermediate-gold);
+        background-color: var(--primary-color);
+        background-image: url(image/white-diamond-dark.png);
         margin: 0;
         display: flex;
         align-items: center;
@@ -203,17 +204,20 @@ footer {
     }
 
     nav ul li a {
-        color: var(--dark);
+        color: var(--intermediate-gold);
         font-size: var(--main-font-size);
     }
-
+    nav ul li a:hover {
+        color: var(--secondary-color);
+        font-size: var(--main-font-size);
+    }
     .close {
         display: block;
 
     }
 
     .close svg {
-        stroke: var(--dark);
+        stroke: var(--secondary-color);
         width: 2rem;
         height: 2rem;
         position: absolute;

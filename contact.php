@@ -1,3 +1,52 @@
+<?php
+$errors = [];
+    
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $contact = array_map('trim', $_POST);
+
+    if (empty($contact['latsname'])) {
+        $errors[] = 'Le nom est obligatoire';
+    }
+
+    $firstnameMaxLength = 70;
+    if (strlen($contact['lastname']) > $firstnameMaxLength) {
+        $errors[] = 'Le nom doit faire moins de ' . $firstnameMaxLength . ' caractères';
+    }
+    if (empty($contact['firstname'])) {
+        $errors[] = 'Le prénom est obligatoire';
+    }
+
+    $firstnameMaxLength = 70;
+    if (strlen($contact['firstname']) > $firstnameMaxLength) {
+        $errors[] = 'Le prénom doit faire moins de ' . $firstnameMaxLength . ' caractères';
+    }
+
+    if (empty($contact['email'])) {
+        $errors[] = 'L\'email est obligatoire';
+    }
+
+    $emailMaxLength = 255;
+    if (strlen($contact['email']) > $emailMaxLength) {
+        $errors[] = 'Le mail doit faire moins de ' . $emailMaxLength . ' caractères';
+    }
+
+    if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Mauvais format pour l\'email ' . htmlentities($contact['email']);
+    }
+
+    if (empty($contact['message'])) {
+        $errors[] = 'Le message est obligatoire';
+    }
+
+    if (empty($errors)) {   
+        header('Location: /contact.php');
+    }
+
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +77,7 @@
                 <li><a href="index.php">Accueil </a></li>
                 <li><a href="./index.php#about-me">A propos </a></li>
                 <li><a href="experience.html">Qualifications </a></li>
-                <li><a href="contact.html">Contact </a></li>
+                <li><a href="contact.php">Contact </a></li>
                 <div class="close" onclick="closeMenuMobile()">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" stroke-width="2">
@@ -54,18 +103,19 @@
             <div class="line"></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> molestiae laudantium minus.</p>
 
-            <form class="contactForm">
-                <label for="name">Nom</label><br />
-                <input type="text" id="name" name="name" placeholder="ex: Fury" /><br />
-                <label for="name">Prénom</label><br />
-                <input type="text" id="name" name="name" placeholder="ex: Patrik" /><br />
+            <form class="contactForm" action="" method="POST">
+                <label for="lastname">Nom</label><br />
+                <input type="text" id="lastname" name="lastname"  value= "<?= $contact['lastname']  ?? '' ?>" placeholder="ex: Fury" required/><br />
+                <label for="firstname">Prénom</label><br />
+                <input type="text" id="firstname" name="firstname"  value= "<?= $contact['firstname']  ?? '' ?>"placeholder="ex: Patrik" required/><br />
                 <label for="email">Email</label><br />
                 <input type="email" id="email" name="email"
-                    placeholder="ex: jesuispatriklesupervilain@tapeur.com " /><br />
+                    placeholder="ex: patriklesupervilain@tapeur.com "  value= "<?= $contact['email']  ?? '' ?>" required /><br />
                 <label for="message">Message</label><br />
-                <textarea id="message" name="message" placeholder="écrit ton message de super vilain ici"></textarea>
+                <textarea id="message" name="message" placeholder="écrit ton message de super vilain ici" required> <?= $contact['message'] ?? '' ?></textarea>
                 <br /><br />
-                <input class="button" type="submit" value="Envoyer" />
+                <button class="button" type="submit" >Envoyer</button>
+              
             </form>
         </div>
         <div class="imagecontact">
