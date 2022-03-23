@@ -30,6 +30,8 @@ body {
     width: 100%;
 }
 
+
+
 nav {
     background-color: var(--primary-color);
     display: flex;
@@ -65,8 +67,39 @@ nav h1 {
 }
 
 nav ul {
+    display: flex;
+    padding-right: 1rem;
+    font-family: var(--main-font);
+    color: var(--intermediate-gold);
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    padding-right: 2.5rem;
+    font-family: var(--main-font);
+    font-size: calc(var(--main-font-size) + 0.1rem);
+}
+nav ul li a {
+    color: var(--intermediate-gold);
+    text-decoration: none;
+    font-family: var(--main-font);
+}
+nav ul li a:hover {
+    font-family: var(--main-font);
+    color: var(--secondary-color);
+}
+.burger {
     display: none;
 }
+.burger svg {
+    stroke: var(--secondary-color);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.close {
+    display: none;
+}
+
 
 footer {
     background-color: var(--primary-color);
@@ -82,7 +115,7 @@ footer {
 
 .disclaimer {
     color: var(--intermediate-gold);
-    font-size: clamp(0.2rem, 0.8vw, 0.9rem);
+    font-size: clamp(0.3rem, 1vw, 0.9rem);
     opacity: 50%;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -95,60 +128,103 @@ footer {
     font-size: clamp(0.5rem, 1vw, 1rem);
 
 }
-@media screen and (min-width: 800px) {
-    nav {
+@media screen and (max-width: 800px) {
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--intermediate-gold);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+    }
+    nav ul.open {
+        display: flex;
+        animation: transformMenu 300ms ease-in-out forwards;
+    }
+    @keyframes transformMenu {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: initial;
+        }
+        
+    }
+    nav ul li {
+        
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    nav ul li a {
+        color: var(--dark);
+        font-size: var(--main-font-size);
+    }
+
+    .close {
+        display: block;
+       
+    }
+    .close svg {
+        stroke: var(--dark);
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+    .mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: none;
+
+    }
+    .mobile.open {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    footer {
         background-color: var(--primary-color);
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        border-bottom: 1px solid var(--secondary-color);
-        position: sticky;
-        top: 0;
+        height: 50px;
+        border-top: 1px solid var(--secondary-color);
         z-index: 2;
+        font-style: italic;
     }
-    nav div {
-        display: flex;
+    
+    .disclaimer {
+        color: var(--intermediate-gold);
+        font-size: clamp(0.5rem, 5vw, 0.6rem);
+        opacity: 50%;
+        margin-right: 0.5rem;
+        margin-left: 1rem;
     }
-    nav img {
+    
+    .footerAt {
+        color: var(--secondary-color);
+        opacity: 80%;
         margin-left: 0.5rem;
-        margin-right: 0.8rem;
-        display: flex;
-        align-items: center;
-        padding-top: 2px;
-    }
-    nav h1 {
-        color: var(--secondary-color);
-        font-family: var(--title-font);
-        font-weight: 100;
-        margin: 0px;
-        font-size: 2rem;
-        display: flex;
-        justify-content: flex-start;
-    }
-    nav ul {
-        display: flex;
-        padding-right: 1rem;
-        font-family: var(--main-font);
-        color: var(--intermediate-gold);
-        justify-content: center;
-    }
-    nav ul li {
-        list-style: none;
-        padding-right: 2.5rem;
-        font-family: var(--main-font);
-        font-size: calc(var(--main-font-size) + 0.1rem);
-    }
-    nav ul li a {
-        color: var(--intermediate-gold);
-        text-decoration: none;
-        font-family: var(--main-font);
-    }
-    nav ul li a:hover {
-        font-family: var(--main-font);
-        color: var(--secondary-color);
-    }
-    .burger {
-        display: none;
+        font-size: clamp(0.5rem, 10vw, 0.8rem);
+
     }
 }
