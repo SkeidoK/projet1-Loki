@@ -14,10 +14,10 @@ h1 {
 }
 
 .main {
-    display              : flex;
+    display                 : flex;
     /* grid-template-columns: 60% auto;
-    grid-template-rows   : 5% auto;  */
-    grid-row-gap         : 1rem;
+    grid-template-rows      : 5% auto;  */
+    grid-row-gap            : 1rem;
 }
 
 div.experience {
@@ -31,7 +31,7 @@ div.experience {
     grid-row-gap         : 2rem;
     column-gap           : 0.5rem;
     padding-left         : 4rem;
-    padding-bottom       : 1rem;
+    padding-bottom       : 2rem;
 
 }
 
@@ -53,6 +53,7 @@ div.experience {
 }
 
 .skills h2 {
+    margin: 0;
     display        : flex;
     align-items    : center;
     justify-content: center;
@@ -63,8 +64,8 @@ div.experience {
 
 .skills {
     display           : flex;
-    flex-direction: column;
-    grid-template-rows: 40% 60%;
+    flex-direction    : column;
+    gap: 2rem;
     padding           : 2rem;
 }
 
@@ -151,7 +152,7 @@ section>h3 {
     background-size  : cover;
 }
 
-li {
+.skills li {
     display   : flex;
     list-style: none;
     gap       : 1rem;
@@ -165,14 +166,13 @@ li {
 }
 
 svg {
-    color    : var(--secondary-color);
-    animation: slide 2s 5s delay 2 normal both;
+    color: var(--secondary-color);
 }
 
 
 
 .image {
-    height: 100%;
+    height          : 100%;
     background-image: url(image/Loki_profile.jpg);
     background-size : cover;
     padding         : 1rem;
@@ -184,7 +184,7 @@ svg {
 
     .main {
         display              : flex;
-        flex-direction: column;
+        flex-direction       : column;
         grid-template-columns: auto;
         grid-template-rows   : auto;
         width                : 100%;
@@ -207,7 +207,9 @@ svg {
     }
 
 
-
+    .skills ul {
+        padding: 0%;
+    }
 
 
     .skills {
@@ -216,6 +218,7 @@ svg {
         grid-column-start: 1;
         grid-column-end  : 2;
         width            : 100%;
+        padding-inline-end: 0%;
     }
 
     .theme2,
@@ -226,6 +229,10 @@ svg {
 
     .image {
         display: none;
+    }
+
+    svg {
+        width: 1rem;
     }
 
     /*@keyframes slide {
