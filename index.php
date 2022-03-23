@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav>
+<nav>
         
         <div>
             <img src="image/lokicvlogo.png" alt="Logo" width="35" height="35">
@@ -25,8 +25,8 @@
 
         <div>
             <ul>
-                <li><a href="index.html">Accueil </a></li>
-                <li><a href="./index.html#about-me">A propos </a></li>
+                <li><a href="index.php">Accueil </a></li>
+                <li><a href="./index.php#about-me">A propos </a></li>
                 <li><a href="experience.html">Qualifications </a></li>
                 <li><a href="contact.html">Contact </a></li>
                 <div class="close" onclick="closeMenuMobile()">
