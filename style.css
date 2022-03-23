@@ -32,6 +32,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url(image/white-diamond-dark.png);
+    background-color: var(--primary-color);
 }
 
 nav {
@@ -117,8 +119,9 @@ footer {
     height: 50px;
     border-top: 1px solid var(--secondary-color);
     font-style: italic;
-    margin-top:auto; 
+    margin-top: 5rem;
     font-weight: 200;
+    z-index: 3;
 }
 
 .disclaimer {
