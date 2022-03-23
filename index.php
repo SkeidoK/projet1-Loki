@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Prata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<?php include 'quote.php' ?>
 </head>
 
 <body>
@@ -52,9 +53,8 @@
         <div class="headerImg">
         </div>
         <div class="quoteSpace">
-            <blockquote class="quoteSpace">
-                « Sûrement le Dieu le plus majestueux de l'univers. »
-                <cite>- Nick Fury</cite>
+        <blockquote class="quoteSpace">
+             <?php echo $RandomList[rand(0,count($RandomList)-1)] ?>
             </blockquote>
         </div>
     </header>
