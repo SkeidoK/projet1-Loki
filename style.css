@@ -107,6 +107,7 @@ nav ul li a:hover {
 display: none;
 }
 
+
 footer {
     background-color: var(--primary-color);
     display: flex;
@@ -211,7 +212,7 @@ footer {
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.6);
         display: none;
-        z-index: 3;
+        z-index: 4;
 
     }
     .mobile.open {
