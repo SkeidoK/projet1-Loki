@@ -106,13 +106,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <?php endforeach; ?>
                 </ul>
                 <label for="lastname">Nom</label><br />
-                <input type="text" id="lastname" name="lastname" value="<?= $contact['lastname'] ?? '' ?>" placeholder="ex: Fury"  /><br />
+                <input type="text" id="lastname" name="lastname" value="<?= $contact['lastname'] ?? '' ?>" placeholder="ex: Fury" required /><br />
                 <label for="firstname">Prénom</label><br />
-                <input type="text" id="firstname" name="firstname" value="<?= $contact['firstname']  ?? '' ?>" placeholder="ex: Patrik"  /><br />
+                <input type="text" id="firstname" name="firstname" value="<?= $contact['firstname']  ?? '' ?>" placeholder="ex: Patrik" required /><br />
                 <label for="email">Email</label><br />
-                <input type="email" id="email" name="email" placeholder="ex: patriklesupervilain@tapeur.com " value="<?= $contact['email']  ?? '' ?>"  /><br />
+                <input type="email" id="email" name="email" placeholder="ex: patriklesupervilain@tapeur.com " value="<?= $contact['email']  ?? '' ?>"  required /><br />
                 <label for="message">Message</label><br />
-                <textarea id="message" name="message" placeholder="écrit ton message de super vilain ici" > <?= $contact['message'] ?? '' ?></textarea>
+                <textarea id="message" name="message" placeholder="écrit ton message de super vilain ici"> <?= $contact['message'] ?? '' ?> </textarea>
                 <br /><br />
                 <button class="button" type="submit">Envoyer</button>
 
