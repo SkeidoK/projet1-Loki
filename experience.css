@@ -154,6 +154,21 @@ li{
     margin: 1rem;
 }
 
+ul{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.li1
+
+.progress-bar {
+    width: 200px;
+    height: 24px;
+    padding: 4px;
+    background-color:var(--intermediate-green);
+    border-radius: 16px;
+}
+
 .image {
     background-image: url(image/Loki_profile.jpg);
     background-size: cover;
