@@ -103,6 +103,9 @@ nav ul li a:hover {
 .close {
     display: none;
 }
+.mobile {
+display: none;
+}
 
 footer {
     background-color: var(--primary-color);
@@ -132,7 +135,7 @@ footer {
     font-size: clamp(0.5rem, 1vw, 1rem);
 
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .burger{
         display: block;
         cursor: pointer;
