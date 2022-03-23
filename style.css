@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400&family=Parisienne&display=swap');
+
 :root {
     --primary-color: #051A05;
     --secondary-color: #d6ae2f;
@@ -75,12 +76,14 @@ nav ul {
     color: var(--intermediate-gold);
     justify-content: center;
 }
+
 nav ul li {
     list-style: none;
     padding-right: 2.5rem;
     font-family: var(--main-font);
     font-size: calc(var(--main-font-size) + 0.1rem);
 }
+
 nav ul li a {
     color: var(--intermediate-gold);
     text-decoration: none;
@@ -95,16 +98,19 @@ nav ul li a:hover {
 .burger {
     display: none;
 }
+
 .burger svg {
     stroke: var(--secondary-color);
     width: 2.5rem;
     height: 2.5rem;
 }
+
 .close {
     display: none;
 }
+
 .mobile {
-display: none;
+    display: none;
 }
 
 
@@ -117,7 +123,7 @@ footer {
     height: 50px;
     border-top: 1px solid var(--secondary-color);
     font-style: italic;
-    margin-top:auto; 
+    margin-top: auto;
     font-weight: 200;
 }
 
@@ -136,11 +142,14 @@ footer {
     font-size: clamp(0.5rem, 1vw, 1rem);
 
 }
+
 @media screen and (max-width: 1200px) {
-    .burger{
-        display: block;
+    .burger {
+        display: flex;
         cursor: pointer;
+        align-items: center;
     }
+
     nav {
         background-color: var(--primary-color);
         display: flex;
@@ -152,7 +161,7 @@ footer {
         top: 0;
         z-index: 3;
     }
-    
+
     nav ul {
         position: fixed;
         top: 0;
@@ -168,24 +177,28 @@ footer {
         display: none;
         z-index: 5;
     }
+
     nav ul.open {
         display: flex;
         animation: transformMenu 300ms ease-in-out forwards;
     }
+
     @keyframes transformMenu {
         0% {
             transform: translateX(100%);
         }
+
         100% {
             transform: initial;
         }
-        
+
     }
+
     nav ul li {
-        
         margin-right: 0;
         margin-bottom: 3rem;
     }
+
     nav ul li a {
         color: var(--dark);
         font-size: var(--main-font-size);
@@ -193,8 +206,9 @@ footer {
 
     .close {
         display: block;
-       
+
     }
+
     .close svg {
         stroke: var(--dark);
         width: 2rem;
@@ -204,6 +218,7 @@ footer {
         right: 1rem;
         cursor: pointer;
     }
+
     .mobile {
         position: fixed;
         top: 0;
@@ -215,13 +230,14 @@ footer {
         z-index: 4;
 
     }
+
     .mobile.open {
         display: block;
     }
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     footer {
         background-color: var(--primary-color);
         display: flex;
@@ -233,7 +249,7 @@ footer {
         z-index: 2;
         font-style: italic;
     }
-    
+
     .disclaimer {
         color: var(--intermediate-gold);
         font-size: clamp(0.5rem, 5vw, 0.6rem);
@@ -241,7 +257,7 @@ footer {
         margin-right: 0.5rem;
         margin-left: 1rem;
     }
-    
+
     .footerAt {
         color: var(--secondary-color);
         opacity: 80%;
