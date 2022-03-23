@@ -116,7 +116,7 @@ section>h3 {
     grid-column-end  : 2;
     grid-row-start   : 3;
     grid-row-end     : 4;
-    background-image : url(image/loki\ evasion.jpg);
+    background-image : url(image/loki\ evasion.jpeg);
     background-size  : cover;
 }
 
@@ -132,7 +132,7 @@ section>h3 {
     grid-column-end  : 3;
     grid-row-start   : 2;
     grid-row-end     : 3;
-    background-image : url(image/lokinewyork.jpg);
+    background-image : url(image/loki2012.png);
     background-size  : cover;
 }
 
@@ -148,7 +148,7 @@ section>h3 {
     grid-column-end  : 3;
     grid-row-start   : 4;
     grid-row-end     : 5;
-    background-image : url(image/lokicoursepoursuite.jpeg);
+    background-image : url(image/lokivariant.png);
     background-size  : cover;
 }
 
