@@ -44,8 +44,8 @@ div.experience {
     grid-column-end  : 3;
     grid-row-start   : 1;
     grid-row-end     : 2;
-    margin-top       : 2.2rem;
-    margin-bottom    : 0;
+    margin           : 0;
+    padding-top      : 2.2rem;
     color            : var(--secondary-color);
     font-family      : var(--title-font);
     font-size        : var(--title-font-size);
@@ -54,14 +54,18 @@ div.experience {
 }
 
 .skills h2 {
-    font-family: var(--title-font);
-    font-size  : var(--title-font-size);
-    color      : var(--secondary-color);
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-family    : var(--title-font);
+    font-size      : var(--title-font-size);
+    color          : var(--secondary-color);
 }
 
 .skills {
     display           : grid;
     grid-template-rows: 20% 40% auto;
+    padding           : 2rem;
 }
 
 section>h3 {
@@ -146,8 +150,6 @@ section>h3 {
     background-image : url(image/lokicoursepoursuite.jpeg);
     background-size  : cover;
 }
-<<<<<<< HEAD
-=======
 
 li {
     display   : flex;
@@ -156,9 +158,10 @@ li {
     margin    : 1rem;
 }
 
-ul {
-    display              : grid;
-    grid-template-columns: auto;
+.skills ul {
+    display       : flex;
+    flex-direction: column;
+
 }
 
 svg {
@@ -166,13 +169,7 @@ svg {
     animation: slide 2s 5s delay 2 normal both;
 }
 
-.progress-bar {
-    width           : 200px;
-    height          : 24px;
-    padding         : 4px;
-    background-color: var(--intermediate-green);
-    border-radius   : 16px;
-}
+
 
 .image {
     background-image: url(image/Loki_profile.jpg);
@@ -182,41 +179,51 @@ svg {
     box-shadow      : 0 4px 4px 6px var(--dark);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
     .main {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        display              : flex;
+        flex-direction: column;
+        grid-template-columns: auto;
+        grid-template-rows   : auto;
+        width                : 100%;
     }
 
     .experience {
         display              : grid;
         grid-template-columns: 1fr;
         grid-template-rows   : 5fr;
-        gap                  : 2rem;
+        row-gap              : 2rem;
+        padding              : 2rem;
+        width                : 100%;
     }
 
     .theme1,
     .theme3,
     .theme5 {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end  : 2;
     }
 
 
-    
-    
-    
+
+
+
     .skills {
-        display: inline-block;
+        display          : flex;
+        flex-direction   : column;
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end  : 2;
+        width            : 100%;
     }
 
     .theme2,
     .theme4,
     .theme6 {
+        display: none;
+    }
+
+    .image {
         display: none;
     }
 
@@ -232,4 +239,3 @@ svg {
         }
     }*/
 }
->>>>>>> ca89037245ffd728bf5fab719d132d4e1d0f2f4d
