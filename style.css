@@ -85,12 +85,13 @@ nav ul li a {
     color: var(--intermediate-gold);
     text-decoration: none;
     font-family: var(--main-font);
-
 }
+
 nav ul li a:hover {
     font-family: var(--main-font);
     color: var(--secondary-color);
 }
+
 .burger {
     display: none;
 }
@@ -113,11 +114,12 @@ footer {
     border-top: 1px solid var(--secondary-color);
     font-style: italic;
     margin-top:auto; 
+    font-weight: 200;
 }
 
 .disclaimer {
     color: var(--intermediate-gold);
-    font-size: clamp(0.3rem, 1vw, 0.9rem);
+    font-size: clamp(0.3rem, 3vw, 0.8rem);
     opacity: 50%;
     margin-right: 1rem;
     margin-left: 1rem;

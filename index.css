@@ -201,7 +201,7 @@ div.background {
     }
     header h1 {
         font-family : 'Prata', serif;
-        font-size : clamp(2.1rem, 3vw, 4rem);
+        font-size : clamp(2.1rem, 7vw, 3rem);
         color: var(--dark);
         text-shadow: 1px 2px 1px var(--light);
         line-height: 2;
