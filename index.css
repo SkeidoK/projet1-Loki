@@ -97,7 +97,7 @@ blockquote.quoteSpace:after{
     font-family: FontAwesome;
     position: absolute;
     color: var(--intermediate-green);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 cite {
@@ -213,6 +213,7 @@ div.background {
     div.quoteSpace {
        display: none;
     }
+    
     section#about-me {
         display: flex;
         flex-direction: column;
@@ -228,6 +229,11 @@ div.background {
         height: 100%;
         margin-left: 0;
         padding-bottom: 0;
+    }
+
+    .about-me div {
+        width: 100%;
+        text-align: center;
     }
 
     .line {
