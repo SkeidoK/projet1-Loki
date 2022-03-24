@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="line"></div>
             <p class="contact-text">Vous avez enfin compris que vous avez besoin de moi?  <br>
             Remplissez le formulaire de contact ci-dessous, 
-            et peut-être que je vous répondrais.</p>
+            et peut-être que, si la demande m'apparait convenable, je vous répondrais.</p>
 
             <form class="contactForm" action="" method="POST">
                 <ul>
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <textarea id="message" name="message" placeholder="écrit ton message de super vilain ici"> <?= $contact['message'] ?? '' ?> </textarea>
                 <br /><br />
                 <button class="button" type="submit">Envoyer</button>
-
+                
             </form>
         </div>
         <div class="imagecontact">
