@@ -145,6 +145,8 @@ section#about-me {
     margin-left: 20%;
     margin-top: 1.5rem;
     box-shadow: 1px 1px 1px 1px var(--dark);
+    border          : 1px solid;
+    border-color    : var(--secondary-color);
 }
 .about-me h2 {
     font-size: var(--title-font-size);
@@ -232,7 +234,11 @@ section#about-me p {
 
     .about-me div {
         width: 100%;
-        text-align: center;
+        text-align: left;
+    }
+
+    .about-me h3 {
+        text-align: left;
     }
 
     .line {
