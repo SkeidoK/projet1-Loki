@@ -39,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (empty($errors)) {
+        echo "Message reçu";
         header('Location: /contact.php');
     }
 }
@@ -97,9 +98,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <h1>Contact</h1>
             <div class="line"></div>
-            <p class="contact-text">Vous avez enfin compris que vous avez besoin de moi?  <br>
-            Remplissez le formulaire de contact ci-dessous, 
-            et peut-être que, si la demande m'apparait convenable, je vous répondrais.</p>
+            <p class="contact-text">Vous avez enfin compris que vous avez besoin de moi? <br>
+                Remplissez le formulaire de contact ci-dessous,
+                et peut-être que, si la demande m'apparait convenable, je vous répondrais.</p>
 
             <form class="contactForm" action="" method="POST">
                 <ul>
@@ -117,8 +118,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <textarea id="message" name="message" placeholder="écrit ton message de super vilain ici"> <?= $contact['message'] ?? '' ?> </textarea>
                 <br /><br />
                 <button class="button" type="submit">Envoyer</button>
-                
+
             </form>
+            <p class="validation"> <?php if (empty($errors)) {
+                    echo "Votre message a bien été envoyé.";
+                } ?> </p>
         </div>
         <div class="imagecontact">
 
