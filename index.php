@@ -48,7 +48,7 @@
     </nav>
     <header>
         <div class="headerTitle">
-            <h1> Mon nom est Loki d'Asgard, <br> <span class="titlePart2">et vous avez besoin de moi.git</span></h1>
+            <h1> Mon nom est Loki d'Asgard, <br> <span class="titlePart2">et vous avez besoin de moi.</span></h1>
         </div>
         <div class="headerImg">
         </div>
@@ -68,15 +68,14 @@
                     <h3>Le supervilain le plus influent de l'univers</h3>
                     <div class="about-me-text"> 
                         <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore quam porro magnam recusandae
-                        fugiat
-                        neque sit inventore ea dicta ipsam facilis veniam obcaecati fugit deserunt est minus, nulla
-                        sequi.
-                        Cumque doloribus temporibus fugit aliquid odio quia consectetur animi neque delectus dicta
-                        inventore,
-                        numquam, assumenda nam ratione magni aliquam distinctio? Provident, consequuntur magnam id
-                        accusamus
-                        iusto sunt asperiores corporis voluptas.
+                        Ai-je vraiment besoin de me présenter? <br>
+                        Loki, le Dieu de la malice, Prince chéri d'Asgard - et même Roi adoré, à deux reprises. J'ai à mon actif un grand nombre de crimes - bien que, je le soutiens,
+                        tout ce que je fais n'est que dans l'intérêt des peuples que je conquiers.
+                        Je suis un supervilain talentueux et charismatique. De la magie à la métarmophose, j'ai plus d'une corde à mon arc. 
+                        Et tout ça sans compter mon armée de fans qui sont prêts à tout pour moi. <br>
+                        Alors? Qu'attendez-vous? Vous avez besoin de moi!
+
+
                     </p>
                 </div>
                     </div>
