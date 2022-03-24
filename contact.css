@@ -62,12 +62,13 @@
                   margin-bottom: 1.5rem;
               }
 
-              p {
+              p.contact-text {
                   color: var(--light);
                   font-family: var(--main-font);
                   font-size: var(--main-font-size);
                   font-weight: 200;
                   margin-bottom: 2rem;
+                  max-width: 65ch;
               }
 
               .contactForm {

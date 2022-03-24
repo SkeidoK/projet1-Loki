@@ -97,7 +97,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <h1>Contact</h1>
             <div class="line"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> molestiae laudantium minus.</p>
+            <p class="contact-text">Vous avez enfin compris que vous avez besoin de moi?  <br>
+            Remplissez le formulaire de contact ci-dessous, 
+            et peut-être que, si la demande m'apparait convenable, je vous répondrais.</p>
 
             <form class="contactForm" action="" method="POST">
                 <ul>
