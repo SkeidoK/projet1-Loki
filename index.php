@@ -69,11 +69,11 @@
                     <div class="about-me-text"> 
                         <p>
                         Ai-je vraiment besoin de me présenter? <br>
-                        Loki, le Dieu de la malice, Prince chéri d'Asgard - et même Roi adoré, à deux reprises. J'ai à mon actif un grand nombre de crimes - bien que, je le soutiens,
-                        tout ce que je fais n'est que dans l'intérêt des peuples que je conquiers.
-                        Je suis un supervilain talentueux et charismatique. De la magie à la métarmophose, j'ai plus d'une corde à mon arc. 
-                        Et tout ça sans compter mon armée de fans qui sont prêts à tout pour moi. <br>
-                        Alors? Qu'attendez-vous? Vous avez besoin de moi!
+                        Loki, le Dieu de la malice, Prince chéri d'Asgard - et même Roi adoré, à deux reprises.
+                        Je suis un supervilain talentueux et charismatique; de la magie à la métamorphose, j'ai plus d'une corde à mon arc. 
+                        Et tout ça sans compter mon armée de fans qui sont prêts à tout pour moi.
+                        Alors? Qu'attendez-vous? <br>
+                        <a class="aboutMeContact" href="contact.php">Vous avez besoin de moi!</a>
 
 
                     </p>
