@@ -73,7 +73,7 @@
                         Je suis un supervilain talentueux et charismatique; de la magie à la métamorphose, j'ai plus d'une corde à mon arc. 
                         Et tout ça sans compter mon armée de fans qui sont prêts à tout pour moi.
                         Alors? Qu'attendez-vous? <br>
-                        <a class="aboutMeContact" href="contact.php">Vous avez besoin de moi!</a>
+                        <a class="aboutMeContact" href="contact.php">Vous avez besoin de moi !</a>
 
 
                     </p>
