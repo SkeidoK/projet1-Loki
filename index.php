@@ -48,7 +48,7 @@
     </nav>
     <header>
         <div class="headerTitle">
-            <h1> Mon nom est Loki d'Asgard, <br> <span class="titlePart2">et vous avez besoin de moi.</span></h1>
+            <h1> Mon nom est Loki d'Asgard, <br> <span class="titlePart2">et vous avez besoin de moi.git</span></h1>
         </div>
         <div class="headerImg">
         </div>
