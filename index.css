@@ -235,6 +235,10 @@ section#about-me p {
         text-align: left;
     }
 
+    .about-me h3 {
+        text-align: left;
+    }
+
     .line {
         height: 1.5px;
         width: 90vw;
