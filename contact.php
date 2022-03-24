@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <textarea id="message" name="message" placeholder="écrit ton message de super vilain ici"> <?= $contact['message'] ?? '' ?> </textarea>
                 <br /><br />
                 <button class="button" type="submit">Envoyer</button>
-
+                
             </form>
         </div>
         <div class="imagecontact">
