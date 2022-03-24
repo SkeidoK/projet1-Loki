@@ -146,7 +146,7 @@ footer {
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     .burger {
         display: flex;
         cursor: pointer;
@@ -244,7 +244,7 @@ footer {
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     footer {
         background-color: var(--primary-color);
         display: flex;
