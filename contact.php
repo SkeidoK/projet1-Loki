@@ -80,7 +80,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="close" onclick="closeMenuMobile()">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                    </svg>    if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Mauvais format pour l\'email ' . htmlentities($contact['email']);
+    }
                 </div>
             </ul>
 
@@ -102,27 +104,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 Remplissez le formulaire de contact ci-dessous,
                 et peut-être que, si la demande m'apparait convenable, je vous répondrais.</p>
 
-            <form class="contactForm" action="" method="POST">
+            <form class="contactForm" action="" method="POST" novalidate>
                 <ul>
                     <?php foreach ($errors as $error) : ?>
                         <li><?= $error ?></li>
                     <?php endforeach; ?>
                 </ul>
                 <label for="lastname">Nom</label><br />
-                <input type="text" id="lastname" name="lastname" value="<?= $contact['lastname'] ?? '' ?>" placeholder="ex: Fury" /><br />
+                <input type="text" id="lastname" name="lastname" value="<?= $contact['lastname'] ?? '' ?>" placeholder="ex: Fury" required/><br />
                 <label for="firstname">Prénom</label><br />
-                <input type="text" id="firstname" name="firstname" value="<?= $contact['firstname']  ?? '' ?>" placeholder="ex: Patrik" /><br />
+                <input type="text" id="firstname" name="firstname" value="<?= $contact['firstname']  ?? '' ?>" placeholder="ex: Patrik" required/><br />
                 <label for="email">Email</label><br />
-                <input type="email" id="email" name="email" placeholder="ex: patriklesupervilain@tapeur.com " value="<?= $contact['email']  ?? '' ?>" /><br />
+                <input type="email" id="email" name="email" placeholder="ex: patriklesupervilain@tapeur.com " value="<?= $contact['email']  ?? '' ?>" required/><br />
                 <label for="message">Message</label><br />
-                <textarea id="message" name="message" placeholder="écrit ton message de super vilain ici"> <?= $contact['message'] ?? '' ?> </textarea>
+                <textarea id="message" name="message" placeholder="écrit ton message de super vilain ici" required> <?= $contact['message'] ?? '' ?> </textarea>
                 <br /><br />
                 <button class="button" type="submit">Envoyer</button>
 
             </form>
-            <p class="validation"> <?php if (empty($errors)) {
-                    echo "Votre message a bien été envoyé.";
-                } ?> </p>
+
         </div>
         <div class="imagecontact">
 
