@@ -44,6 +44,7 @@
 
               .imagecontact:hover {
                   filter: brightness(100%);
+                  transition: 5s linear 1s;
               }
 
               .formulaire {
@@ -138,7 +139,7 @@
                   border-radius: 6px;
                   height: 2rem;
                   opacity: 80%;
-                  width: 25%;
+                  width: 23%;
                   height: 40px;
                 
               }
