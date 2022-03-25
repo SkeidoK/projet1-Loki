@@ -187,6 +187,7 @@ section#about-me p {
     border-bottom: 1px solid var(--intermediate-gold);
     text-shadow: 1px 1px 1px var(--dark);
     padding-bottom: 0.5px;
+    cursor: pointer;
 }
 
 .aboutMeContact:hover {
