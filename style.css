@@ -255,6 +255,7 @@ footer {
         border-top: 1px solid var(--secondary-color);
         z-index: 1;
         font-style: italic;
+        margin-top: 1rem;
     }
 
     .disclaimer {
