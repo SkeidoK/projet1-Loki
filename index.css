@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 60% 40%;
+    min-height: 20rem;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    background-color: var(--secondary-color);
+    background-image: url(image/backgroundheader.png);
+    background-size: cover;
+}
+
+header div{
+    margin-right: 10%;
+    height: 8rem;
+    width: 32rem;
+    margin-left: 10%;
+}
+
+.headerTitle {
+    margin-top : clamp(3rem, 2rem, 1rem);
+    margin-left: 5vw;
+    width: auto;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+header h1:hover{
+    transform: scale(1.02);
+  }
+  
+header h1 {
+    font-family : 'Prata', serif;
+    font-size : clamp(2rem, 3vw, 3rem);
+    color: var(--dark);
+    text-shadow: 1px 1px 1px var(--light);
+    line-height: 2;
+    transition: transform 0.7s;
+}
+
+.titlePart2 {
+    margin-left: clamp(5vw, 10vw, 15vw);
+}
+
+div.quoteSpace {
+    height: 13vh;
+    width: 55vw;
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    margin-left: 2vw;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+blockquote.quoteSpace {
+    font-size: 1.2rem;
+    position: relative; 
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 85%; 
+    color: var(--intermediate-green);
+    margin: 1rem auto 2rem;
+    background:
+    linear-gradient(to right, var(--intermediate-green) 4px, transparent 4px) 0% 100%,
+    linear-gradient(to left, var(--intermediate-green) 4px, transparent 4px) 100% 0%,
+    linear-gradient(to bottom, var(--intermediate-green) 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, var(--intermediate-green) 4px, transparent 4px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    opacity: 80%;
+}
+
+blockquote.quoteSpace:hover{
+    opacity: 90%;
+}
+
+blockquote.quoteSpace:before{
+    content: "\f10d";
+    top: -12px;
+    margin-right: -20px;
+    right: 100%;
+}
+
+blockquote.quoteSpace:after{
+    content: "\f10e";
+    margin-left: -20px;
+    left: 100%;  
+    top: auto;
+    bottom: -20px;
+}
+
+blockquote.quoteSpace:before,
+blockquote.quoteSpace:after{
+    font-family: FontAwesome;
+    position: absolute;
+    color: var(--intermediate-green);
+    font-size: 1.5rem;
+}
+
+cite {
+    font-size: 1.1rem;
+}
+
+.quoteSpace:hover {
+    opacity: 100%;
+}
+
+div.headerImg {
+    background-image: url(image/Loki-headerleft.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    margin: 0;
+}
+
+section#about-me {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;   
+    height: 50vh;
+    width: 90%;
+    margin-left: 5%;
+    gap: 2rem;
+    padding-top: 3rem;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.aboutmeImg {
+    grid-column: 1 / 2;
+    background-image: url(image/loki-1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 95%;
+    border-radius: 3px;
+    margin-left: 20%;
+    margin-top: 1.5rem;
+    box-shadow: 1px 1px 1px 1px var(--dark);
+    border          : 1px solid;
+    border-color    : var(--secondary-color);
+}
+.about-me h2 {
+    font-size: var(--title-font-size);
+    font-family: var(--title-font);
+    color: var(--secondary-color);
+    font-weight: 100;
+    margin: 0;
+    text-shadow: 0.5px 1px 1px var(--dark); 
+}
+
+.about-me h3 {
+    font-size: calc(var(--main-font-size) + 0.3rem);
+    font-family: var(--main-font);
+    color: var(--intermediate-gold);
+    font-weight: 150;
+    text-shadow: 0.5px 1px 1px var(--dark);
+}
+
+section#about-me p {
+    font-family: var(--main-font);
+    max-width: 45ch;
+    font-size: clamp(0.9rem, 1.2vw, var(--main-font-size));
+    font-weight: 200;
+}
+
+.line {
+    height: 1.5px;
+    width: 40vw;
+    background-color: var(--secondary-color);
+    text-shadow: 0.5px 1px 1px var(--dark);
+}
+
+.aboutMeContact {
+    font-style: none;
+    text-decoration: none;
+    color: var(--intermediate-gold);
+    font-size: var(--main-font-size);
+    border-bottom: 1px solid var(--intermediate-gold);
+    text-shadow: 1px 1px 1px var(--dark);
+    padding-bottom: 0.5px;
+    cursor: pointer;
+}
+
+.aboutMeContact:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 900px;
+        overflow: hidden;
+    }
+    div.headerImg {
+        padding-top: 75rem;
+        background-size: cover;
+        z-index: 0;
+    }
+    .headerTitle {
+        margin-top : 0;
+        width: auto;
+        text-align: center;
+        z-index: 1;
+    }
+    header h1 {
+        font-family : 'Prata', serif;
+        font-size : clamp(2.1rem, 7vw, 3rem);
+        color: var(--dark);
+        text-shadow: 1px 2px 1px var(--light);
+        line-height: 2;
+        transition: transform 0.7s;
+    }
+    
+    .titlePart2 {
+        margin-left: 0;
+    }
+    div.quoteSpace {
+       display: none;
+    }
+    
+    section#about-me {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 55rem;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    .aboutmeImg {
+        background-size: cover;
+        width: 100%;
+        height: 35vh;
+        margin-left: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    .about-me div {
+        width: 100%;
+        text-align: left;
+    }
+
+    .about-me h3 {
+        text-align: left;
+    }
+
+    section#about-me p {
+        font-family: var(--main-font);
+        max-width: 45ch;
+        font-size: clamp(1rem, 1.5vw, var(--main-font-size));
+        font-weight: 200;
+    }
+
+    .line {
+        height: 1.5px;
+        width: 90vw;
+        background-color: var(--secondary-color);
+        text-shadow: 0.5px 1px 1px var(--dark);
+    }
+    }

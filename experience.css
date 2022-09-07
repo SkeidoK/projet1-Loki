@@ -1,0 +1,262 @@
+body {
+    color           : var(--light);
+    font-family     : var(--main-font);
+    background-color: var(--dark);
+    background-image: url(image/white-diamond-dark.png);
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+.main {
+    display                 : flex;
+    /* grid-template-columns: 60% auto;
+    grid-template-rows      : 5% auto;  */
+    grid-row-gap            : 1rem;
+}
+
+div.experience {
+    color: var(--light);
+}
+
+.date {
+    font-family: 'Prata', serif;
+    font-size  : 1rem;
+    opacity    : 0.8;
+}
+
+p {
+    font-weight: 300;
+}
+
+.experience {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    width                : 100%;
+    grid-row-gap         : 2rem;
+    column-gap           : 0.5rem;
+    padding-left         : 4rem;
+    padding-bottom       : 2rem;
+
+}
+
+.experience h2 {
+    display          : flex;
+    align-items      : center;
+    justify-content  : center;
+    grid-column-start: 1;
+    grid-column-end  : 3;
+    grid-row-start   : 1;
+    grid-row-end     : 2;
+    margin           : 0;
+    padding-top      : 2.2rem;
+    color            : var(--secondary-color);
+    font-family      : var(--title-font);
+    font-size        : var(--title-font-size);
+    font-weight      : 100;
+
+
+}
+
+.skills h2 {
+    margin         : 0;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-family    : var(--title-font);
+    font-size      : var(--title-font-size);
+    font-weight    : 100;
+    color          : var(--secondary-color);
+}
+
+.skills {
+    display       : flex;
+    flex-direction: column;
+    gap           : 2rem;
+    padding       : 2rem;
+}
+
+section>h3 {
+    color        : var(--secondary-color);
+    text-shadow  : 1px 1px 1px var(--intermediate-green);
+    margin       : 0;
+    margin-bottom: 0.5rem;
+    font-size    : 1.4rem;
+}
+
+.theme1,
+.theme2,
+.theme3,
+.theme4,
+.theme5,
+.theme6,
+.theme7,
+.theme8 {
+    background-color: var(--primary-color);
+    border          : 1px solid;
+    border-color    : var(--secondary-color);
+    box-shadow      : 4px 4px 8px 8px var(--dark);
+    border-radius   : 6px;
+    padding         : 1rem;
+}
+
+.theme1:hover,
+.theme2:hover,
+.theme3:hover,
+.theme4:hover,
+.theme5:hover,
+.theme6:hover,
+.theme7:hover,
+.theme8:hover {
+    opacity: 1;
+
+}
+
+.theme1 {
+    grid-column-start: 1;
+    grid-column-end  : 2;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+}
+
+.theme2 {
+    grid-column-start: 1;
+    grid-column-end  : 2;
+    grid-row-start   : 3;
+    grid-row-end     : 4;
+    background-image : url(image/loki\ evasion.jpeg);
+    background-size  : cover;
+}
+
+.theme3 {
+    grid-column-start: 1;
+    grid-column-end  : 2;
+    grid-row-start   : 4;
+    grid-row-end     : 5;
+}
+
+.theme4 {
+    grid-column-start: 2;
+    grid-column-end  : 3;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+    background-image : url(image/loki2012.png);
+    background-size  : cover;
+}
+
+.theme5 {
+    grid-column-start: 2;
+    grid-column-end  : 3;
+    grid-row-start   : 3;
+    grid-row-end     : 4;
+}
+
+.theme6 {
+    grid-column-start: 2;
+    grid-column-end  : 3;
+    grid-row-start   : 4;
+    grid-row-end     : 5;
+    background-image : url(image/lokivariant.png);
+    background-size  : cover;
+}
+
+.skills li:hover {
+    transform: scale(1.05);
+}
+
+.skills li {
+    display   : flex;
+    list-style: none;
+    gap       : 1rem;
+    margin    : 1rem;
+}
+
+.skills ul {
+    display       : flex;
+    flex-direction: column;
+
+}
+
+svg {
+    color: var(--secondary-color);
+}
+
+
+
+.image {
+    height          : 100%;
+    background-image: url(image/Loki_profile.jpg);
+    background-size : cover;
+    padding         : 1rem;
+    border-radius   : 10px;
+    box-shadow      : 0 4px 4px 6px var(--dark);
+    border          : 1px solid;
+    border-color    : var(--secondary-color);
+}
+
+@media screen and (max-width: 900px) {
+
+    .main {
+        display              : flex;
+        flex-direction       : column;
+        grid-template-columns: auto;
+        grid-template-rows   : auto;
+        width                : 100%;
+    }
+
+    .experience {
+        display              : grid;
+        grid-template-columns: 1fr;
+        grid-template-rows   : 5fr;
+        row-gap              : 2rem;
+        padding              : 2rem;
+        width                : 100%;
+    }
+
+    .theme1,
+    .theme3,
+    .theme5 {
+        grid-column-start: 1;
+        grid-column-end  : 2;
+    }
+
+
+    .skills ul {
+        padding: 0%;
+    }
+
+    .skills h2 {
+        font-size      : 2.8rem;
+        align-items    : flex-start;
+        justify-content: flex-start;
+    }
+
+
+    .skills {
+        display           : flex;
+        flex-direction    : column;
+        grid-column-start : 1;
+        grid-column-end   : 2;
+        width             : 100%;
+        padding-inline-end: 0%;
+    }
+
+    .theme2,
+    .theme4,
+    .theme6 {
+        display: none;
+    }
+
+    .image {
+        display: none;
+    }
+
+    svg {
+        width: 1rem;
+    }
+}
